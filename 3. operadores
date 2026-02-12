@@ -1,0 +1,4 @@
+real = float(input("Digite um número: "))
+dobro = real * 2
+terco = real /3
+print (f"O dobro de {real} é {dobro} e um terço dele é {terco:.2f}")
