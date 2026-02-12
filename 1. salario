@@ -1,0 +1,4 @@
+nome = input("Digite seu Nome: ")
+salario = float(input("Digite seu Salario Mensal: "))
+resultado = salario * 12
+print(f"Olá {nome}, você recebe R${salario} no mês, e R$ {resultado} no ano.")
