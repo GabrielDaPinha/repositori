@@ -1,0 +1,5 @@
+s = float(input(f"Quanto você recebe por hora? "))
+h = float(input(f"Quantas horas você trabalha por dia? "))
+d = float(input(f"Quantos dias você trabalha por mês? "))
+t = s * h * d
+print(f"Você recebe R${t:.2f} no mês")
