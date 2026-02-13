@@ -1,0 +1,11 @@
+print("Quer saber quantos baldes seram usados para se pintar uma parede e também quanto vai custar?")
+a = float(input("Qual a altura da parede?"))
+l = float(input("Qual a largura da parede?"))
+b = float(input("Quantos litros tem o balde de tinta que será utilizado?"))
+m = float(input("Quantos metros pinta o litro da tinta?"))
+c = float(input("Qual o valor do balde de tinta?"))
+parede = a * l
+metros = b * m
+baldes = parede / metros
+preco = baldes * c
+print(f"Você usará {baldes} baldes de tinta e isso custará R$ {preco:.2f}")
