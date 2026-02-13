@@ -1,0 +1,5 @@
+print("Calcule a área de um quadrado")
+l = float(input(f"Qual a altura do quadrado? "))
+b = float(input(f"Qual a largura do quadrado? "))
+r = l * b
+print(f"A área do quadrado é de: {r}")
