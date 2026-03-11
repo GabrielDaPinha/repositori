@@ -1,0 +1,22 @@
+print("quer medir a área de um quadrado, triângulo ou retangulo?")
+print("1 - quadradado")
+print("2 - triângulo")
+print("3 - retangulo")
+escolha = int(input(f"1, 2 ou 3? "))
+match escolha:
+    case 1:
+        l = float(input(f"Qual o tamanho de um lados?"))
+        a = l * l
+        print(f"seu quadrado tem aproximadamente {a:.2f} de área")
+    case 2:
+        h = float(input(f"qual a altura do triângulo?"))
+        b = float(input(f"qual o tamanho da base?"))
+        a = b * h
+        print(f"seu triângulo tem aproximadamente {a:.2f} de área")
+    case 3:
+        h = float(input(f"qual a altura do retangulo?"))
+        b = float(input(f"qual o tamanho da base?"))
+        a = b * h
+        print(f"seu retangulo tem aproximadamente {a:.2f} de área")
+    case _:
+        print("erro")
