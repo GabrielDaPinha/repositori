@@ -1,0 +1,25 @@
+coc = 30
+pele = 20
+congas = 80
+while True:
+    print(f"------------")
+    print("-=ESTOQUE=-")
+    print(f"------------")
+    print(f"Coca-Cola 2L = {coc}")
+    print(f"Café Pilão = {pele}")
+    print(f"Colgate = {congas}")
+    saicoc = int(input(f"Quantas cocas saíram? "))
+    coc = coc - saicoc
+    saipele = int(input(f"Quantos cafés saíram? "))
+    pele = pele - saipele
+    saicongas = int(input("Quantas colgates saíram? "))
+    congas = congas - saicongas
+    entcoc = int(input(f"Quantas cocas entraram? "))
+    coc = coc + entcoc
+    entpele = int(input(f"Quantos cafés entraran? "))
+    pele = pele + entpele
+    entcongas = int(input("Quantas colgates entraram? "))
+    congas = congas + entcongas
+    simnao = input("Deseja Sair? 'sim' ou 'não'")
+    if simnao == "sim":
+        break
