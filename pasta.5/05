@@ -1,0 +1,24 @@
+print("CADASTRO:")
+print("Bem-Vindo, insira um nome e senha para se cadastrar.")
+nome = input(f"Insira seu nome: ")
+pas = input(f"Insira sua senha: ")
+saldo = 0
+while True:
+    print("LOGIN:")
+    print("Insira um nome e senha para login.")
+    nome1 = input(f"Nome: ")
+    pas1 = input(f"Senha: ")
+    if nome1 == nome and pas1 == pas:
+        while True:
+            print(f"Bem vindo, {nome}")
+            print(f"Seu saldo é de: {saldo}")
+            esc = input("Deseja sacar, depositar ou sair? ")
+            if esc == "depositar":
+                dep = int(input("Insira o valor do depósito: "))
+                saldo = saldo + dep
+            elif esc == "sacar":
+                sac = int(input("Insira o valor do saque: "))
+                saldo = saldo - sac
+            elif esc == "sair":
+                break
+        break
