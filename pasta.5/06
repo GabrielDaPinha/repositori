@@ -1,0 +1,13 @@
+div = 0
+nota1 = 0
+print("Insira as notas do seu aluno e digite 'sair' para calcular a média")
+while True:
+    nota = input("Insira a nota do aluno: ")
+    if nota == "sair":
+        break
+    elif nota != "sair":
+        div = div + 1
+        nota = int(nota)
+        nota1 = nota1 + nota
+        media = nota1 / div
+print(f"A média do aluno é {media}")
