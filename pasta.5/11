@@ -1,0 +1,18 @@
+pre1 = 0
+quant1 = 0
+total1 = 0
+print("Insira o preço e a quantidade do produtou, ou, 'sair' para sair")
+while True:
+    pre = input("Preço: ")
+    if pre == "sair":
+        break
+    else:
+        pre1 = float(pre)
+    quant = input("Quantidade: ")
+    if quant == "sair":
+        break
+    else:
+        quant1 = int(quant)
+        total = pre1 * quant1
+        total1 = total1 + total
+print(total1)
