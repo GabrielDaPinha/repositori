@@ -1,0 +1,12 @@
+maior = 0
+soma = 0
+while True:
+    num = input("Digite algo um súmero ou 'sair' para sair: ")
+    if num == 'sair':
+        break
+    else:
+        num = int(num)
+        soma = soma + num
+        if num > maior:
+            maior = num
+print(f"O maior número digitado foi {maior} e a soma de todos foi {soma}")
