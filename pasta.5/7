@@ -1,8 +1,0 @@
-dol = 0
-while True:
-    dol = int(input(f"insira o valor em dólares para converter em euros: "))
-    if dol != 0:
-        eur = dol / 1.3
-        print(f"{dol} em euros é igual a {eur:.2f}")
-    else:
-        break
