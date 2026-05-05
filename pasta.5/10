@@ -1,0 +1,22 @@
+um = 0
+dois = 0
+tres = 0
+cand1 = input("Insira o nome do primeiro candidato: ")
+cand2 = input("Insira o nome do segundo candidato: ")
+cand3 = input("Insira o nome do ultimo candidato: ")
+while True:
+    print(f"1 - {cand1}")
+    print(f"2 - {cand2}")
+    print(f"3 - {cand3}")
+    voto = input(f"Dedeja votar em qual candidato? Digite 'fim' para contabilizar: ")
+    if voto == "1":
+        um = um + 1
+    elif voto == "2":
+        dois = dois + 1
+    elif voto == "3":
+        tres = tres + 1
+    elif voto == "fim":
+        break
+print(f"Votos no {cand1}: {um}")
+print(f"Votos no {cand2}: {dois}")
+print(f"Votos no {cand3}: {tres}")
